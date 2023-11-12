@@ -29,7 +29,7 @@ docker-mysql-sakila/
 1. **Clona el repositorio:**
 
 ```bash
-git clone <https://github.com/tuusuario/docker-mysql-sakila.git>
+git clone https://github.com/hamelhmc/docker-mysql-sakila.git
 ```
 
 2. **Navega al directorio del proyecto:**

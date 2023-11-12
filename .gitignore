@@ -1,0 +1,9 @@
+# Ignorar la carpeta que almacena los datos persistentes de MySQL generados por Docker
+docker/db_data/
+
+# Ignorar archivos generados por el sistema operativo
+Thumbs.db
+.DS_Store
+
+# Ignorar el archivo de entorno que contiene configuraciones sensibles como contraseñas
+.env

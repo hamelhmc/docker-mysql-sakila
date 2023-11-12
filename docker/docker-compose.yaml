@@ -1,0 +1,36 @@
+version: '3'
+services:
+  mysql-sakila:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mysql-sakila:1.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      RedeActividade1:
+        ipv4_address: 172.200.0.100
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    platform: linux/amd64
+    environment:
+      PMA_HOST: mysql-sakila
+    networks:
+      RedeActividade1:
+        ipv4_address: 172.200.0.200
+    ports:
+      - '9443:80'
+
+volumes:
+  db_data:
+
+networks:
+  RedeActividade1:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.200.0.0/16
