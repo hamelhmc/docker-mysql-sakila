@@ -86,3 +86,44 @@ Esto detendrá los servicios y eliminará los contenedores y volúmenes asociado
 Este entorno es solo para fines educativos y de desarrollo. No se recomienda para uso en entornos de producción.
 
 > Este es un ejemplo básico. Puedes personalizar el contenido según tus necesidades específicas. Asegúrate de proporcionar información relevante sobre cómo configurar, utilizar y personalizar tu entorno Docker.
+
+## Utilizando el Makefile
+
+#### Instalación de Make (si aún no está instalado)
+
+- **Linux:**
+
+```bash
+  sudo apt-get update
+  sudo apt-get install make
+```
+
+- **macOS:**
+
+```bash
+  brew install make
+```
+
+- **Windows:**
+
+[Make for Windows](http://gnuwin32.sourceforge.net/packages/make.htm)
+
+#### Uso del Makefile
+
+Una vez que Make está instalado, puedes utilizar el Makefile para simplificar tareas relacionadas con Docker. Aquí hay algunos comandos útiles:
+
+| Comando                | Descripción                                    |
+| ---------------------- | ---------------------------------------------- |
+| make env-file          | Crear y configurar el archivo .env             |
+| make start             | Iniciar los servicios de Docker                |
+| make import-data       | Importar datos de Sakila (solo la primera vez) |
+| make access-phpmyadmin | Acceder a PHPMyAdmin desde el navegador        |
+| make stop              | Detener y limpiar los servicios de Docker      |
+| make clean             | Eliminar el archivo .env                       |
+| make open-phpmyadmin   | Abrir PHPMyAdmin en el navegador               |
+| make logs              | Ver los logs de los servicios de Docker        |
+| make clean-images      | Eliminar todas las imágenes Docker             |
+| make clean-containers  | Eliminar todos los contenedores Docker         |
+| make clean-volumes     | Eliminar todos los volúmenes Docker            |
+
+Estos comandos te permitirán ejecutar tareas comunes de Docker de manera sencilla. Asegúrate de revisar el Makefile para conocer todas las tareas disponibles.
