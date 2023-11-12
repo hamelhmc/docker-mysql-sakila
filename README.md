@@ -1,6 +1,6 @@
 # Docker MySQL Sakila
 
-Este proyecto proporciona un entorno Dockerizado con un servidor MySQL que utiliza la base de datos de ejemplo Sakila. También incluye un servicio de PHPMyAdmin para administrar la base de datos.
+Este proyecto facilita un entorno Dockerizado con un servidor MySQL que emplea la base de datos de ejemplo Sakila. También se incluye un servicio de PHPMyAdmin para administrar la base de datos de manera eficiente.
 
 ## Estructura del Proyecto
 
@@ -23,7 +23,7 @@ docker-mysql-sakila/
 
 ### Requisitos Previos
 
-- Docker instalado en tu máquina.
+- Asegúrate de tener Docker instalado en tu máquina.
 
 ### Pasos para Ejecutar
 
@@ -63,7 +63,7 @@ docker exec -i docker-mysql-sakila-1 bash -c "mysql -u root -p<contraseña_confi
 
 6. **Accede a PHPMyAdmin desde tu navegador:**
 
-[localhost](http://localhost:9443/)
+> localhost:9443
 
 - Usuario: `root`
 - Contraseña: La que hayas configurado en el archivo `.env`
@@ -90,7 +90,7 @@ Este entorno es solo para fines educativos y de desarrollo. No se recomienda par
 
 ## Utilizando el Makefile
 
-#### Instalación de Make (si aún no está instalado)
+### Instalación de Make (si aún no está instalado)
 
 - **Linux:**
 
@@ -109,7 +109,7 @@ Este entorno es solo para fines educativos y de desarrollo. No se recomienda par
 
 [Make for Windows](http://gnuwin32.sourceforge.net/packages/make.htm)
 
-#### Uso del Makefile
+### Uso del Makefile
 
 Una vez que Make está instalado, puedes utilizar el Makefile para simplificar tareas relacionadas con Docker. Aquí hay algunos comandos útiles:
 
