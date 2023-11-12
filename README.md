@@ -15,6 +15,7 @@ docker-mysql-sakila/
 │
 ├── .gitignore        # Archivo para especificar archivos y carpetas a ignorar por git
 ├── .env              # Archivo de entorno para configuración (define MYSQL_ROOT_PASSWORD)
+├── Makefile          # Archivo Makefile para automatizar tareas de Docker
 └── README.md         # Archivo README con instrucciones
 ```
 
